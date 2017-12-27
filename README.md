@@ -1,1 +1,2 @@
-# mogo-nov-team-1
+The project is in the process of setting up.
+Please do not clone this repository yet.
