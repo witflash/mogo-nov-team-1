@@ -13,7 +13,7 @@ gulp.task('scss', function() {
 		.pipe(scss().on( 'error', function( error )
 			{console.log( error );} )
 		)
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade:true}))
+		.pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7'], {cascade:true}))
 		.pipe(gulp.dest('src/style'))
 		.pipe(browserSync.reload({stream: true}));
 });
