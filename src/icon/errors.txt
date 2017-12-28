@@ -1,0 +1,4 @@
+[2017-12-28 17:32:02] layer "pinterest.svg": Duplicate path: pinterest.svg
+[2017-12-28 17:32:11] layer "facebook.svg": Duplicate path: facebook.svg
+[2017-12-28 17:32:28] layer "twitter.svg": Duplicate path: twitter.svg
+[2017-12-28 17:32:34] layer "instagram.svg": Duplicate path: instagram.svg

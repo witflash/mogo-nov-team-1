@@ -1,3 +1,13 @@
 @import '_normalize';
 @import 'grid';
+@import '_icons';
 @import '_variables';
+
+
+// Common styles
+@import 'common';
+
+// Your styles:
+
+@import 'sections/_header';
+@import 'sections/_section-first';

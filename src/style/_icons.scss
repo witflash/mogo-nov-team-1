@@ -1,0 +1,182 @@
+@font-face {
+	font-family: "mogo-icons";
+	src: url('../../font/mogo-icons.eot');
+	src: url('../../font/mogo-icons.eot?#iefix') format('eot'),
+		url('../../font/mogo-icons.woff2') format('woff2'),
+		url('../../font/mogo-icons.woff') format('woff'),
+		url('../../font/mogo-icons.ttf') format('truetype'),
+		url('../../font/mogo-icons.svg#mogo-icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "mogo-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == alarm {
+		$char: "\E001";
+	}
+	@if $filename == arrow-down {
+		$char: "\E002";
+	}
+	@if $filename == arrow-left {
+		$char: "\E003";
+	}
+	@if $filename == arrow-right {
+		$char: "\E004";
+	}
+	@if $filename == book {
+		$char: "\E005";
+	}
+	@if $filename == bullseye {
+		$char: "\E006";
+	}
+	@if $filename == cart {
+		$char: "\E007";
+	}
+	@if $filename == dribbble {
+		$char: "\E008";
+	}
+	@if $filename == equalizer {
+		$char: "\E009";
+	}
+	@if $filename == facebook {
+		$char: "\E00A";
+	}
+	@if $filename == g-plus {
+		$char: "\E00B";
+	}
+	@if $filename == graph {
+		$char: "\E00C";
+	}
+	@if $filename == home {
+		$char: "\E00D";
+	}
+	@if $filename == instagram {
+		$char: "\E00E";
+	}
+	@if $filename == picture {
+		$char: "\E00F";
+	}
+	@if $filename == pin {
+		$char: "\E010";
+	}
+	@if $filename == pinterest {
+		$char: "\E011";
+	}
+	@if $filename == search {
+		$char: "\E012";
+	}
+	@if $filename == speech {
+		$char: "\E013";
+	}
+	@if $filename == tumblr {
+		$char: "\E014";
+	}
+	@if $filename == twitter {
+		$char: "\E015";
+	}
+	@if $filename == users {
+		$char: "\E016";
+	}
+	@if $filename == youtube {
+		$char: "\E017";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-alarm {
+	@include icon(alarm);
+}
+.icon-arrow-down {
+	@include icon(arrow-down);
+}
+.icon-arrow-left {
+	@include icon(arrow-left);
+}
+.icon-arrow-right {
+	@include icon(arrow-right);
+}
+.icon-book {
+	@include icon(book);
+}
+.icon-bullseye {
+	@include icon(bullseye);
+}
+.icon-cart {
+	@include icon(cart);
+}
+.icon-dribbble {
+	@include icon(dribbble);
+}
+.icon-equalizer {
+	@include icon(equalizer);
+}
+.icon-facebook {
+	@include icon(facebook);
+}
+.icon-g-plus {
+	@include icon(g-plus);
+}
+.icon-graph {
+	@include icon(graph);
+}
+.icon-home {
+	@include icon(home);
+}
+.icon-instagram {
+	@include icon(instagram);
+}
+.icon-picture {
+	@include icon(picture);
+}
+.icon-pin {
+	@include icon(pin);
+}
+.icon-pinterest {
+	@include icon(pinterest);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-speech {
+	@include icon(speech);
+}
+.icon-tumblr {
+	@include icon(tumblr);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+.icon-users {
+	@include icon(users);
+}
+.icon-youtube {
+	@include icon(youtube);
+}
