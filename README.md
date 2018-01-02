@@ -39,6 +39,7 @@ How to work with this repo:
   For example if you create first section:
     * add styles to `src/style/sections/_section-first.scss`
     * include your style file into common scss `src/style/main.scss` using string like this `@import 'sections/_section-first';`
+    * add your styles for different devices into `src/style/responsive.scss`
     * add html markup `src/template/_parts/_section-first.html`
     * include your section into common html `src/template/index.html` using string like this `{% include "_parts/_section-first.html" %}` ;)
 

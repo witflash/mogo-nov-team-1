@@ -1,0 +1,25 @@
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    @import "xl/_section-header";
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    @import "lg/_section-header";
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    @import "md/_section-header";
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    @import "sm/_section-header";
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    @import "xs/_section-header";
+}
