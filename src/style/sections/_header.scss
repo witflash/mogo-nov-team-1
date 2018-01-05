@@ -49,11 +49,42 @@
     .header__logo{
         font: 30px 'montserrat';
         font-weight: bold;
+        cursor: default;
     }
 
     .header__top-wrap{
         display: flex;
         margin-top: 25px;
+    }
+
+    .header__menu-btn{
+        cursor: pointer;
+        display: none;
+
+        .btn__stick{
+            width: 35px;
+            height: 4px;
+            background-color: #fff;
+            display: block;
+            border-radius: 2px;
+            margin: 8px 0;
+            transition: 0.3s transform;
+            transform-origin: 100% 50% 0;
+        }
+
+        &--close{
+            .btn__stick{
+                &--1{
+                    transform: rotateZ(-45deg);
+                }
+                &--2{
+                    transform: scaleX(0);
+                }
+                &--3{
+                    transform: rotateZ(45deg);
+                }
+            }
+        }
     }
 
     .header__nav{

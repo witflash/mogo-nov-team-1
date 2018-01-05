@@ -12,6 +12,11 @@ $(document).ready(function(){
         nextArrow: false
     });
 
+    $(".header__menu-btn").click(function(e){
+        $(this).toggleClass("header__menu-btn--close");
+        $(".header__nav").toggleClass("header__nav--opened");
+    });
+
     // END HEADER //
 
 });
