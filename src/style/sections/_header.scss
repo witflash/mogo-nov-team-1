@@ -1,9 +1,17 @@
 .section--header{
+
+    $header-hover-color: #fce38a;
+
     height: 100vh;
     max-height: 100%;
     max-height: 100vh;
     position: relative;
     color: #fff;
+
+    a{
+        color: unset;
+        text-decoration: unset;
+    }
 
     .header__slider{
         position: absolute;
@@ -35,7 +43,7 @@
     }
 
     .header__content{
-        overflow: auto;
+        overflow: hidden;
     }
 
     .header__logo{
@@ -46,5 +54,39 @@
     .header__top-wrap{
         display: flex;
         margin-top: 25px;
+    }
+
+    .header__nav{
+        align-self: center;
+        margin-left: auto;
+
+        .nav__item{
+            font: 14px 'montserrat';
+            text-transform: uppercase;
+            margin-left: 50px;
+            position: relative;
+
+            &:hover{
+                color: $header-hover-color;
+
+                &:after{
+                    transform: scaleX(1);
+                }
+            }
+
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                height: 3px;
+                width: 100%;
+                transform: scaleX(0);
+                background-color: $header-hover-color;
+                right: 0;
+                bottom: -10px;
+                transition: 0.3s transform;
+                transform-origin: center;
+            }
+        }
     }
 }
