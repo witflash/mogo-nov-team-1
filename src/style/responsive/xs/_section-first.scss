@@ -1,3 +1,20 @@
 .section--first{
-    background-color: red;
+	padding: 0px 10px;
+
+	& .image-background {
+	    margin-bottom: 20px;
+}
+	& .content-images{
+		margin-top: 20px;
+	}
+
+	& .section__text--uppercase{
+		margin: 10px;
+	}
+
+	& .section__descr{
+		margin-top: 15px;
+		text-align: justify;
+	}
+
 }
