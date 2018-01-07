@@ -6,37 +6,9 @@
 	text-align: center;
 	padding: 90px 0px 110px 0px;
 
-	& .section__title{
-		font-family: $font-cursive;
-		font-size: 24px;
-		font-weight: 400;
-		margin: 0px;
-	}
-
-	& .section__text--uppercase{
-		font-family: $font-montserrat;
-		font-size: 30px;
-		margin-bottom: 40px;
-	}
-
-	& .section__line{
-		background-color: #f38181;
-	    width: 60px;
-	    height: 3px;
-	    display: block;
-	    margin: 0 auto;
-	}
-
-	& .section__descr{
-		margin-top: 45px;
-		color: $gray;
-		line-height: 24px;
-		margin-bottom: 0px;
-	}
-
 	& .content-images {
 		margin-top: 100px;
-}
+	}
 
 	& .image-background{
 		background-color: #95e1d3;
