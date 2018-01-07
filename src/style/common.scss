@@ -1,3 +1,36 @@
 .section{
     font: 15px 'roboto';
+
+    &__title{
+		font-family: $font-cursive;
+		font-size: 24px;
+		font-weight: 400;
+        margin: 0px;
+        text-align: center;
+	}
+
+	&__text--uppercase{
+		font-family: $font-montserrat;
+		font-size: 30px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+	}
+
+	&__line{
+		background-color: #f38181;
+	    width: 60px;
+	    height: 3px;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	&__descr{
+		margin-top: 45px;
+		color: $gray;
+		line-height: 24px;
+        margin-bottom: 0px;
+        text-align: center;
+	}
 }
