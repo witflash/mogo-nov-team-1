@@ -48,53 +48,59 @@
 	@if $filename == cart {
 		$char: "\E007";
 	}
-	@if $filename == dribbble {
+	@if $filename == computer {
 		$char: "\E008";
 	}
-	@if $filename == equalizer {
+	@if $filename == dribbble {
 		$char: "\E009";
 	}
-	@if $filename == facebook {
+	@if $filename == equalizer {
 		$char: "\E00A";
 	}
-	@if $filename == g-plus {
+	@if $filename == facebook {
 		$char: "\E00B";
 	}
-	@if $filename == graph {
+	@if $filename == g-plus {
 		$char: "\E00C";
 	}
-	@if $filename == home {
+	@if $filename == graph {
 		$char: "\E00D";
 	}
-	@if $filename == instagram {
+	@if $filename == home {
 		$char: "\E00E";
 	}
-	@if $filename == picture {
+	@if $filename == image {
 		$char: "\E00F";
 	}
-	@if $filename == pin {
+	@if $filename == instagram {
 		$char: "\E010";
 	}
-	@if $filename == pinterest {
+	@if $filename == picture {
 		$char: "\E011";
 	}
-	@if $filename == search {
+	@if $filename == pin {
 		$char: "\E012";
 	}
-	@if $filename == speech {
+	@if $filename == pinterest {
 		$char: "\E013";
 	}
-	@if $filename == tumblr {
+	@if $filename == search {
 		$char: "\E014";
 	}
-	@if $filename == twitter {
+	@if $filename == speech {
 		$char: "\E015";
 	}
-	@if $filename == users {
+	@if $filename == tumblr {
 		$char: "\E016";
 	}
-	@if $filename == youtube {
+	@if $filename == twitter {
 		$char: "\E017";
+	}
+	@if $filename == users {
+		$char: "\E018";
+	}
+	@if $filename == youtube {
+		$char: "\E019";
 	}
 
 	@return $char;
@@ -132,6 +138,9 @@
 .icon-cart {
 	@include icon(cart);
 }
+.icon-computer {
+	@include icon(computer);
+}
 .icon-dribbble {
 	@include icon(dribbble);
 }
@@ -149,6 +158,9 @@
 }
 .icon-home {
 	@include icon(home);
+}
+.icon-image {
+	@include icon(image);
 }
 .icon-instagram {
 	@include icon(instagram);
