@@ -1,3 +1,19 @@
 .section--first{
-    background-color: orangered;
+	padding: 10px 20px;
+
+	& .image-background {
+	    margin-bottom: 20px;
+}
+	& .content-images{
+		margin-top: 20px;
+	}
+
+	& .section__text--uppercase{
+		margin: 10px;
+	}
+
+	& .section__descr{
+		margin-top: 15px;
+	}
+
 }
