@@ -8,10 +8,11 @@
 .stat {
 	display: flex;
 	justify-content: center;
+	flex-wrap: nowrap;
 	color: $color-bg;
 	
 	&__item {
-		flex: 0 0 20%;
+		// flex: 0 0 20%;
 		padding: 90px 20px;
 		text-align: center;
 		align-content: center;
