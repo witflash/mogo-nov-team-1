@@ -1,0 +1,37 @@
+.section--second {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	background: $color-teal;
+	font-family: $font-montserrat;
+}
+
+.stat {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	color: $color-bg;
+	
+	&__item {
+		// flex: 0 0 20%;
+		padding: 90px 20px;
+		text-align: center;
+		align-content: center;
+		font-size: $font-main;
+		border-right: 1px solid $color-bg--transparent;
+	}
+
+	&__item:first-child {
+		border-left: 1px solid $color-bg--transparent;
+	}
+
+	&__count {
+		display: block;
+		font-size: $font-xlarge;
+		font-weight: bold;
+	}
+
+	&__name {
+		display: block;
+		text-transform: uppercase;
+	}
+}
