@@ -172,3 +172,94 @@
         }
     }
 }
+
+
+.section--6{
+    background-color: #f8f8f8;
+    padding: 70px 0;
+
+    .comments{
+        position: relative;
+        overflow: hidden;
+
+        .slick-arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #cccccc;
+            font-size: 22px;
+            cursor: pointer;
+            z-index: 999999;
+
+            &:hover{
+                color: #ddd;
+            }
+
+            &-next{
+                right: 0;
+            }
+
+            &-prev{
+                left: 0;
+            }
+        }
+
+        &__item{
+            display: inline-flex;
+            justify-content: space-between;
+            margin: 0 110px;
+            outline: none;
+        }
+
+        &__icon{
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            border: 3px solid #95e1d3;
+            color: #95e1d3;
+        }
+
+        &__body{
+            margin-left: 60px;
+        }
+
+        &__text{
+            margin: 0;
+            color: #999999;
+            font: 24px roboto;
+            font-style: italic;
+            font-weight: 400;
+            text-align: justify;
+
+            &:before{
+                content: "“";
+            }
+
+            &:after{
+                content: "”";
+            }
+        }
+
+        &__author{
+            font: 24px $font-cursive;
+            margin-top: 24px;
+            display: inline-block;
+
+            &:before{
+                content: "";
+                display: inline-block;
+                height: 3px;
+                width: 60px;
+                background-color: #f38181;
+                margin-bottom: 5px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

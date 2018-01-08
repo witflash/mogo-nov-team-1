@@ -102,4 +102,18 @@ $(document).ready(function(){
 
     // END SECTION 5 //
 
+    // SECTION 6 //
+
+    $(".section--6 .comments").slick({ // slider initialization
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: '<span class="icon-arrow-left slick-arrow-prev"></span>',
+        nextArrow: '<span class="icon-arrow-right slick-arrow-next"></span>',
+        zIndex: 0,
+    });
+
+    // END SECTION 6 //
+
 });
