@@ -17,6 +17,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     @import "md/_section-header";
     @import "md/_section-first";
+    @import "md/_section-second";    
     @import "md/_sections-3-6";
 }
 
@@ -24,6 +25,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
     @import "sm/_section-header";
     @import "sm/_section-first";
+    @import "sm/_section-second";
     @import "sm/_sections-3-6";
 }
 
@@ -31,5 +33,6 @@
 @media (max-width: 575px) {
     @import "xs/_section-header";
     @import "xs/_section-first";
+    @import "xs/_section-second";    
     @import "xs/_sections-3-6";
 }
