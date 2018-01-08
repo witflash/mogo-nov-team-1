@@ -22,7 +22,7 @@ $(document).ready(function(){
             dots: false,
             prevArrow: false,
             nextArrow: false,
-            zIndex: 0
+            zIndex: 0,
         });
 
         headerSliderSwitch(0); // for launch slide switching process
@@ -57,5 +57,49 @@ $(document).ready(function(){
     // -- slider
 
     // END HEADER //
+
+
+
+
+    // SECTION 5 //
+
+    var section5AccordeonDelay = 500;
+
+    $(".section--5 .accordeon__photos").slick({ // slider initialization
+        infinite: true,
+        speed: section5AccordeonDelay,
+        fade: true,
+        cssEase: 'linear',
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        zIndex: 0,
+        draggable: false,
+        swipe: false
+    });
+
+    $(".section--5 .accordeon__element .element__header").click(function(e){
+        // close all tabs
+        $(".section--5 .accordeon__element").each(function(){
+            var $this = $(this);
+            $this.find(".element__content").slideUp(section5AccordeonDelay, function(){
+                $this.removeClass("accordeon__element--opened");
+            });
+        });
+
+        var $element = $(this).parent(); // get wanted element for current tab
+
+        if($element.hasClass("accordeon__element--opened")) return; // if tab opened exit from function
+
+        var index = $(".section--5 .accordeon__element").index($element); // get index of tab (need for opened slide in slider)
+
+        $element.find(".element__content").slideDown(section5AccordeonDelay, function(){ // get content element in tab and open it
+            $element.addClass("accordeon__element--opened");
+        });
+
+        $(".section--5 .accordeon__photos").slick("slickGoTo", index); // change slide
+    });
+
+    // END SECTION 5 //
 
 });
