@@ -40,3 +40,28 @@
         display: none;
     }
 }
+
+
+.section--4{
+    padding: 90px 0px 0px 0px;
+    background: url(../img/section-4-bg.png) no-repeat center;
+    background-size: cover;
+
+    .image{
+        &__container{
+            position: relative;
+            text-align: center;
+            font-size: 0;
+            margin-top: 45px;
+        }
+        &--tablet{
+
+        }
+
+        &--phone{
+            position: absolute;
+            bottom: -100px;
+            left: 60%;
+        }
+    }
+}
