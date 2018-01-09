@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "mogo-icons";
-	src: url('../../font/mogo-icons.eot');
-	src: url('../../font/mogo-icons.eot?#iefix') format('eot'),
-		url('../../font/mogo-icons.woff2') format('woff2'),
-		url('../../font/mogo-icons.woff') format('woff'),
-		url('../../font/mogo-icons.ttf') format('truetype'),
-		url('../../font/mogo-icons.svg#mogo-icons') format('svg');
+	src: url('../font/mogo-icons.eot');
+	src: url('../font/mogo-icons.eot?#iefix') format('eot'),
+		url('../font/mogo-icons.woff2') format('woff2'),
+		url('../font/mogo-icons.woff') format('woff'),
+		url('../font/mogo-icons.ttf') format('truetype'),
+		url('../font/mogo-icons.svg#mogo-icons') format('svg');
 }
 
 @mixin icon-styles {
