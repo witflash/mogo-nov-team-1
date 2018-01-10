@@ -40,7 +40,7 @@ gulp.task('iconfont', function(){
 			fontName: 'mogo-icons',
 			path: 'src/style/templates/_icons.scss',
 			targetPath: '../style/_icons.scss',
-			fontPath: '../../font/'
+			fontPath: '../font/'
 		}))
 		.pipe(iconfont({
 			fontName: 'mogo-icons',
