@@ -1,0 +1,23 @@
+.section--seven{
+	padding: 10px 20px;
+
+	& .image-background {
+	    margin-bottom: 10px;
+}
+	& .content-images{
+		margin-top: 20px;
+	}
+
+	& .section__name{
+		margin: 10px;
+	}
+
+	& .section__descr{
+		margin-top: 15px;
+	}
+
+	& .person-name{
+		margin-top: 0px;
+	}
+
+}
