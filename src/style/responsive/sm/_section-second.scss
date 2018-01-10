@@ -1,0 +1,17 @@
+.stat {
+	flex-wrap: wrap;
+	padding: 90px 0;
+
+	&__item {
+		padding: 20px;
+		border: none;
+	}
+
+	&__item:first-child {
+		border: none;
+	}
+
+	&__count {
+		font-size: $font-xlarge * 0.6;
+	}
+}

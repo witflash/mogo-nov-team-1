@@ -1,0 +1,57 @@
+.section--3{
+    
+    .service{
+
+        &__item{
+            margin: 30px 0;
+        }
+    }
+
+    .separator{
+        &--sm{
+            display: block;
+        }
+    }
+}
+
+.section--4{
+
+    .image{
+        &--tablet{
+            width: 50%;
+        }
+
+        &--phone{
+            transform-origin: 50% 100% 0;
+            transform: scale(0.5);
+            bottom: -60px;
+            left: 50%;
+        }
+    }
+}
+
+.section--6{
+
+    .comments{
+
+        &__item{
+            margin: 0 50px;
+        }
+
+        &__icon{
+            display: none;
+        }
+
+        &__body{
+            margin-left: 30px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+
+        &__author{
+            font: 16px $font-cursive;
+        }
+    }
+}
