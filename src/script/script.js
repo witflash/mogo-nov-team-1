@@ -115,5 +115,16 @@ $(document).ready(function(){
     });
 
     // END SECTION 6 //
+    // SECTION 10 //
+    $(".section--10 .comments").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: '<span class="icon-arrow-left slick-arrow-prev"></span>',
+        nextArrow: '<span class="icon-arrow-right slick-arrow-next"></span>',
+        zIndex: 0,
+    });
 
+    // END SECTION 10 //
 });
