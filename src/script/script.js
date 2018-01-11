@@ -22,7 +22,7 @@ $(document).ready(function(){
             dots: false,
             prevArrow: false,
             nextArrow: false,
-            zIndex: 0,
+            zIndex: 0
         });
 
         headerSliderSwitch(0); // for launch slide switching process
@@ -50,7 +50,7 @@ $(document).ready(function(){
             $(headerSliderSlides[headerSliderCurrent]).find(".process .process__filled").animate({width: "100%"}, headerSliderDelay);
         }
 
-        // click on slide controlll
+        // click on slide control
         $(".section--header .slides__item").click(function(e){
             headerSliderSwitch(headerSliderSlides.indexOf(e.currentTarget));
         });
