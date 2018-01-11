@@ -21,3 +21,26 @@
 	}
 
 }
+.section--10{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & .comments{
+
+        &__img{
+        	display: none;
+        }
+
+		&__text{
+			font-size: 16px;
+			text-align: justify;
+        }
+		&__author{
+			font-size: 16px;
+        }
+		&__item{
+			margin-left: 10px;
+			margin-right: 30px;
+        }
+        }
+        }
