@@ -1,0 +1,29 @@
+.section--openmap {
+    padding: 55px;
+    background-image: url("../img/map-bg.jpg");
+    background-size: cover;
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+.openmap {
+    text-align: center;
+    text-decoration: none;
+
+    &__title {
+        padding-bottom: 20px;
+        margin: 0;
+        font-family: $font-montserrat;
+        font-size: $font-medium;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color-blush;
+    }
+
+    &__point {
+        font-size: $font-large;
+        color: $color-blush;
+    }
+}
