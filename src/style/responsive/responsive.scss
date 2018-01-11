@@ -4,6 +4,7 @@
     @import "xl/_section-header";
     @import "xl/_section-first";
     @import "xl/_sections-3-6";
+    @import "xl/_sections-7-11";
 }
 
 // Large devices (desktops, 992px and up)
@@ -11,6 +12,7 @@
     @import "lg/_section-header";
     @import "lg/_section-first";
     @import "lg/_sections-3-6";
+    @import "lg/_sections-7-11";
 }
 
 // Medium devices (tablets, 768px and up)
@@ -19,6 +21,7 @@
     @import "md/_section-first";
     @import "md/_section-second";    
     @import "md/_sections-3-6";
+    @import "md/_sections-7-11";
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -27,6 +30,7 @@
     @import "sm/_section-first";
     @import "sm/_section-second";
     @import "sm/_sections-3-6";
+    @import "sm/_sections-7-11";
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -35,4 +39,5 @@
     @import "xs/_section-first";
     @import "xs/_section-second";    
     @import "xs/_sections-3-6";
+    @import "xs/_sections-7-11";
 }
