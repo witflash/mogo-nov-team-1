@@ -1,0 +1,27 @@
+.footer {
+    color: $gray;
+
+    &__item {
+
+    }
+
+    &__title {
+        font-size: $font-xlarge;
+
+    }
+}
+
+.footer-item {
+
+    &__article {
+        margin-bottom: 30px;
+
+        img {
+            float: left;
+        }
+    }
+}
+
+.clear {
+    clear: both;
+}
