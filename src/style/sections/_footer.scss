@@ -44,13 +44,14 @@
     }
     
     &__galery {
-        font-size: $font-small;
-        color: $gray--darken;
-        font-style: italic;
+        text-align: center;
     }
-
+    
     &__desc {
         padding-top: 20px;
+        font-size: $font-small;
+        font-style: italic;
+        color: $gray--darken;
     }
 }
 
