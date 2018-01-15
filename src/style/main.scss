@@ -2,6 +2,7 @@
 @import 'grid';
 @import '_icons';
 @import '_variables';
+@import '_mixins';
 
 
 // Common styles
@@ -13,6 +14,9 @@
 @import 'sections/_section-second';
 @import 'sections/_sections-3-6';
 @import 'sections/_sections7-11';
+@import 'sections/_section-blog';       // Section 12
+@import 'sections/_section-openmap';    // Section 13
+@import 'sections/_footer';             // Section 14
 
 // .................................... //
 @import 'responsive/responsive';

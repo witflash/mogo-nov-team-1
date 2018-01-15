@@ -48,59 +48,68 @@
 	@if $filename == cart {
 		$char: "\E007";
 	}
-	@if $filename == computer {
+	@if $filename == comment {
 		$char: "\E008";
 	}
-	@if $filename == dribbble {
+	@if $filename == computer {
 		$char: "\E009";
 	}
-	@if $filename == equalizer {
+	@if $filename == dribbble {
 		$char: "\E00A";
 	}
-	@if $filename == facebook {
+	@if $filename == equalizer {
 		$char: "\E00B";
 	}
-	@if $filename == g-plus {
+	@if $filename == eye {
 		$char: "\E00C";
 	}
-	@if $filename == graph {
+	@if $filename == facebook {
 		$char: "\E00D";
 	}
-	@if $filename == home {
+	@if $filename == g-plus {
 		$char: "\E00E";
 	}
-	@if $filename == image {
+	@if $filename == graph {
 		$char: "\E00F";
 	}
-	@if $filename == instagram {
+	@if $filename == home {
 		$char: "\E010";
 	}
-	@if $filename == picture {
+	@if $filename == image {
 		$char: "\E011";
 	}
-	@if $filename == pin {
+	@if $filename == instagram {
 		$char: "\E012";
 	}
-	@if $filename == pinterest {
+	@if $filename == picture {
 		$char: "\E013";
 	}
-	@if $filename == search {
+	@if $filename == pin {
 		$char: "\E014";
 	}
-	@if $filename == speech {
+	@if $filename == pinterest {
 		$char: "\E015";
 	}
-	@if $filename == tumblr {
+	@if $filename == point {
 		$char: "\E016";
 	}
-	@if $filename == twitter {
+	@if $filename == search {
 		$char: "\E017";
 	}
-	@if $filename == users {
+	@if $filename == speech {
 		$char: "\E018";
 	}
-	@if $filename == youtube {
+	@if $filename == tumblr {
 		$char: "\E019";
+	}
+	@if $filename == twitter {
+		$char: "\E01A";
+	}
+	@if $filename == users {
+		$char: "\E01B";
+	}
+	@if $filename == youtube {
+		$char: "\E01C";
 	}
 
 	@return $char;
@@ -138,6 +147,9 @@
 .icon-cart {
 	@include icon(cart);
 }
+.icon-comment {
+	@include icon(comment);
+}
 .icon-computer {
 	@include icon(computer);
 }
@@ -146,6 +158,9 @@
 }
 .icon-equalizer {
 	@include icon(equalizer);
+}
+.icon-eye {
+	@include icon(eye);
 }
 .icon-facebook {
 	@include icon(facebook);
@@ -173,6 +188,9 @@
 }
 .icon-pinterest {
 	@include icon(pinterest);
+}
+.icon-point {
+	@include icon(point);
 }
 .icon-search {
 	@include icon(search);

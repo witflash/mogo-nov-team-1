@@ -1,12 +1,20 @@
 // Colour Variables
+$gray--lighten: #e5e5e5;
+$gray--light: #cccccc;
 $gray: #999;
+$gray--darken: #333;
 $color-bg: #fff;
 $color-bg--transparent: rgba(255, 255, 255, 0.3);
 $color-teal: #95e1d3;
+$color-blush: #f38181;
 
 // Font Variables
 $font-cursive: Kaushan Script, cursive;
 $font-montserrat : Montserrat,sans-serif;
 
+$font-small: 12px;
 $font-main: 14px;
+$font-medium: 24px;
+$font-large: 30px;
+$font-larger: 46px;
 $font-xlarge: 50px;
