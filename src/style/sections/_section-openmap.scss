@@ -20,10 +20,16 @@
         font-weight: bold;
         text-transform: uppercase;
         color: $color-blush;
+        
+        &:hover {
+            font-size: $font-large;
+            transition-duration: 0.5s;
+        }
     }
 
     &__point {
         font-size: $font-large;
         color: $color-blush;
     }
+
 }
