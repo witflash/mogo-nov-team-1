@@ -2964,7 +2964,7 @@ html {
 @font-face {
   font-family: "mogo-icons";
   src: url("../font/mogo-icons.eot");
-  src: url("../font/mogo-icons.eot?#iefix") format("eot"), url("../font/mogo-icons.woff2") format("woff2"), url("../font/mogo-icons.woff") format("woff"), url("../font/mogo-icons.ttf") format("truetype"), url("../font/mogo-icons.svg#mogo-icons") format("svg"); }
+  src: url("../font/mogo-icons.eot?#iefix") format("eot"), url("../font/mogo-icons.woff") format("woff"), url("../font/mogo-icons.ttf") format("truetype"), url("../font/mogo-icons.svg#mogo-icons") format("svg"); }
 
 .icon-alarm:before, .icon-arrow-down:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-book:before, .icon-bullseye:before, .icon-cart:before, .icon-comment:before, .icon-computer:before, .icon-dribbble:before, .icon-equalizer:before, .icon-eye:before, .icon-facebook:before, .icon-g-plus:before, .icon-graph:before, .icon-home:before, .icon-image:before, .icon-instagram:before, .icon-picture:before, .icon-pin:before, .icon-pinterest:before, .icon-point:before, .icon-search:before, .icon-speech:before, .icon-tumblr:before, .icon-twitter:before, .icon-users:before, .icon-youtube:before {
   font-family: "mogo-icons";
