@@ -115,6 +115,14 @@ $(document).ready(function(){
     });
 
     // END SECTION 6 //
+
+    // SECTION OPENMAP //
+    $('.js-click-map').one('click', function () {
+      $('.js-map').addClass('opened');
+      $('.js-openmap-text').fadeOut(500)
+    });
+    // END SECTION OPENMAP //
+
     // SECTION 10 //
     $(".section--10 .comments").slick({
         slidesToShow: 1,
@@ -128,3 +136,19 @@ $(document).ready(function(){
 
     // END SECTION 10 //
 });
+
+function loadMap() {
+  var position = new google.maps.LatLng(50.4380912,30.5068577);
+  var mapOptions = {
+    center: position,
+    zoom: 12,
+    disableDefaultUI: true
+  };
+
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  var marker = new google.maps.Marker({
+    position: position,
+    map: map,
+    title: 'we are here!'
+  });
+}
