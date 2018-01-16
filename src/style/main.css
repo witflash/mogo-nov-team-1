@@ -3691,7 +3691,7 @@ html {
   margin: 0 auto;
   width: 135px;
   height: 145px;
-  background: url(img/logos.png) no-repeat; }
+  background: url(../img/logos.png) no-repeat; }
   .logo-client--2 {
     background-position: -215px 0; }
   .logo-client--3 {
@@ -3816,7 +3816,7 @@ html {
         margin-right: 10px; }
 
 .section--11 {
-  background: url(img/section-11-bg.jpg) center no-repeat;
+  background: url(../img/section-11-bg.jpg) center no-repeat;
   background-size: cover;
   padding-top: 110px;
   padding-bottom: 110px;
