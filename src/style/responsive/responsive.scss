@@ -31,7 +31,23 @@
     @import "sm/_section-second";
     @import "sm/_sections-3-6";
     @import "sm/_sections-7-11";
+
+    .section:not(.section--header){
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .section{
+        &__descr{
+            margin-top: 15px;
+        }
+
+        &__subtitle{
+            margin: 10px;
+        }
+    }
 }
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
@@ -40,4 +56,20 @@
     @import "xs/_section-second";    
     @import "xs/_sections-3-6";
     @import "xs/_sections-7-11";
+
+    .section:not(.section--header){
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .section{
+        &__descr{
+            margin-top: 15px;
+            text-align: justify;
+        }
+
+        &__subtitle{
+            margin: 10px;
+        }
+    }
 }
