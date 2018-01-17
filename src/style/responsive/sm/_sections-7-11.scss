@@ -1,31 +1,43 @@
 .section--seven{
-	padding: 10px 20px;
-
-	& .image-background {
-	    margin-bottom: 10px;
-}
 	& .content-images{
 		margin-top: 20px;
-	}
-
-	& .section__name{
-		margin: 10px;
-	}
-
-	& .section__descr{
-		margin-top: 15px;
 	}
 
 	& .person-name{
 		margin-top: 0px;
 	}
+	& .nav {
+		bottom: 0;
+		position: absolute;
+}
+	& .gradient-content {
+	    align-items: flex-end;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+}
+
+	& .container-move:hover .gradient-content, .image-background:hover .gradient-content{
+		position: absolute;
+	    background: linear-gradient(180deg,hsla(0,83%,73%,.9) 0,hsla(47,95%,76%,.9));
+}
 
 }
+
+.section--works{
+
+	& .images-content{
+		margin-top: 20px;
+	}
+
+}
+
 .section--10{
     padding-top: 20px;
     padding-bottom: 20px;
 
-    & .comments{
+    & .quote{
 
         &__img{
         	display: none;

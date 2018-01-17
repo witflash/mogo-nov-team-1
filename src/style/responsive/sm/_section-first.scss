@@ -1,6 +1,4 @@
-.section--first{
-	padding: 10px 20px;
-
+.section{
 	& .image-background {
 	    margin-bottom: 20px;
 }
@@ -8,12 +6,5 @@
 		margin-top: 20px;
 	}
 
-	& .section__text--uppercase{
-		margin: 10px;
-	}
-
-	& .section__descr{
-		margin-top: 15px;
-	}
 
 }
