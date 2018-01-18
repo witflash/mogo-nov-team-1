@@ -1,4 +1,4 @@
-.section--3{
+.section--services{
     
     $icon-blue-color: #95e1d3;
     
@@ -42,7 +42,7 @@
 }
 
 
-.section--4{
+.section--design{
     padding: 90px 0px 0px 0px;
     background: url(../img/section-4-bg.png) no-repeat center;
     background-size: cover;
@@ -66,7 +66,7 @@
     }
 }
 
-.section--5{
+.section--wedo{
     padding: 90px 0px 110px 0px;
 
     .accordeon{
@@ -174,7 +174,7 @@
 }
 
 
-.section--6{
+.section--quotes{
     background-color: #f8f8f8;
     padding: 70px 0;
 
@@ -236,14 +236,8 @@
             font-style: italic;
             font-weight: 400;
             text-align: justify;
-
-            &:before{
-                content: "“";
-            }
-
-            &:after{
-                content: "”";
-            }
+            display: block;
+            quotes: "“" "”";
         }
 
         &__author{
