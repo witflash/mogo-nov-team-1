@@ -25,6 +25,17 @@ $(document).ready(function(){
             zIndex: 0
         });
 
+        $(".text-slider").slick({ // slider initialization
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            cssEase: 'linear',
+            dots: false,
+            prevArrow: false,
+            nextArrow: false,
+            zIndex: 0
+        });
+
         headerSliderSwitch(0); // for launch slide switching process
 
         function headerSliderSwitch(slide = null){ // function need for slide switching
@@ -40,9 +51,11 @@ $(document).ready(function(){
             // go to wanted slide or to next one
             if(slide != null){
                 $(".header__slider").slick("slickGoTo", slide);
+                $(".text-slider").slick("slickGoTo", slide);
                 headerSliderCurrent = slide;
             } else{
                 $(".header__slider").slick("slickNext");
+                $(".text-slider").slick("slickNext");
                 headerSliderCurrent = $(".header__slider").slick("slickCurrentSlide");
             }
 
@@ -65,7 +78,7 @@ $(document).ready(function(){
 
     var section5AccordeonDelay = 500;
 
-    $(".section--5 .accordeon__photos").slick({ // slider initialization
+    $(".section--wedo .accordeon__photos").slick({ // slider initialization
         infinite: true,
         speed: section5AccordeonDelay,
         fade: true,
@@ -78,9 +91,9 @@ $(document).ready(function(){
         swipe: false
     });
 
-    $(".section--5 .accordeon__element .element__header").click(function(e){
+    $(".section--wedo .accordeon__element .element__header").click(function(e){
         // close all tabs
-        $(".section--5 .accordeon__element").each(function(){
+        $(".section--wedo .accordeon__element").each(function(){
             var $this = $(this);
             $this.find(".element__content").slideUp(section5AccordeonDelay, function(){
                 $this.removeClass("accordeon__element--opened");
@@ -91,13 +104,13 @@ $(document).ready(function(){
 
         if($element.hasClass("accordeon__element--opened")) return; // if tab opened exit from function
 
-        var index = $(".section--5 .accordeon__element").index($element); // get index of tab (need for opened slide in slider)
+        var index = $(".section--wedo .accordeon__element").index($element); // get index of tab (need for opened slide in slider)
 
         $element.find(".element__content").slideDown(section5AccordeonDelay, function(){ // get content element in tab and open it
             $element.addClass("accordeon__element--opened");
         });
 
-        $(".section--5 .accordeon__photos").slick("slickGoTo", index); // change slide
+        $(".section--wedo .accordeon__photos").slick("slickGoTo", index); // change slide
     });
 
     // END SECTION 5 //

@@ -13,6 +13,19 @@
         text-decoration: unset;
     }
 
+    .text-slider{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+
+        &__item{
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
     .header__slider{
         position: absolute;
         height: 100%;
@@ -86,6 +99,9 @@
                     transform: rotateZ(45deg);
                 }
             }
+            position: fixed;
+            top: 30px;
+            right: 5%;
         }
     }
 
