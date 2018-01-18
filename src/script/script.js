@@ -115,9 +115,9 @@ $(document).ready(function(){
 
     // END SECTION 5 //
 
-    // SECTION 6 //
+    // SECTION 6 and 10//
 
-    $(".section--quotes .comments").slick({ // slider initialization
+    $(".js-slider-section").slick({ // slider initialization
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -127,7 +127,7 @@ $(document).ready(function(){
         zIndex: 0,
     });
 
-    // END SECTION 6 //
+    // END SECTION 6 and 10 //
 
     // SECTION OPENMAP //
     $('.js-click-map').one('click', function () {
@@ -136,18 +136,6 @@ $(document).ready(function(){
     });
     // END SECTION OPENMAP //
 
-    // SECTION 10 //
-    $(".section--10 .comments").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        prevArrow: '<span class="icon-arrow-left slick-arrow-prev"></span>',
-        nextArrow: '<span class="icon-arrow-right slick-arrow-next"></span>',
-        zIndex: 0,
-    });
-
-    // END SECTION 10 //
 });
 
 function loadMap() {
