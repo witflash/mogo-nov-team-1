@@ -3701,7 +3701,9 @@ html {
   margin: 0 auto;
   width: 135px;
   height: 145px;
-  background: url(../img/logos.png) no-repeat; }
+  background: url(../img/logos.png) no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .logo-client--2 {
     background-position: -215px 0; }
   .logo-client--3 {
