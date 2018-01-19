@@ -47,6 +47,14 @@
             font-size: 1.2em;
         }
     }
+
+    &__subscribe {
+        display: flex;
+    }
+
+    &__input {
+        flex: 1 0 auto;
+    }
     
     &__social {
         margin-top: 15px;
@@ -140,7 +148,6 @@
 
 .input {
     padding: 11px;
-    width: 230px;
     border: 1px solid $gray--lighten;
     @include placeholder {
         font-style: italic;

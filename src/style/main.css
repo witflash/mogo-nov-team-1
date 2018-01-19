@@ -4028,6 +4028,14 @@ html {
     line-height: 1.6; }
     .footer__desc__strong {
       font-size: 1.2em; }
+  .footer__subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
   .footer__social {
     margin-top: 15px;
     border-top: solid 1px #e5e5e5;
@@ -4104,7 +4112,6 @@ html {
 
 .input {
   padding: 11px;
-  width: 230px;
   border: 1px solid #e5e5e5; }
   .input.placeholder {
     font-style: italic;
@@ -4424,4 +4431,6 @@ html {
   .section__subtitle {
     margin: 10px; }
   .hidden-md, .hidden-xs {
-    display: none; } }
+    display: none; }
+  .button {
+    padding: 12px 10px; } }
