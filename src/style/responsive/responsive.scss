@@ -22,6 +22,10 @@
     @import "md/_section-second";    
     @import "md/_sections-3-6";
     @import "md/_sections-7-11";
+
+    .hidden-md {
+        display: none;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -45,6 +49,10 @@
         &__subtitle{
             margin: 10px;
         }
+    }
+
+    .hidden-md {
+        display: none;
     }
 }
 
@@ -71,5 +79,9 @@
         &__subtitle{
             margin: 10px;
         }
+    }
+
+    .hidden-md, .hidden-xs {
+        display: none;
     }
 }

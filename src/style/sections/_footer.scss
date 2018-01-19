@@ -12,6 +12,7 @@
     }
     
     &__item {
+        display: block;
         margin-top: 60px;    
     }
     
@@ -19,7 +20,7 @@
         font-style: italic;
     }
     
-    &__galery {
+    &__gallery {
         text-align: center;
     }
 
@@ -107,6 +108,10 @@
     &__team {
         color: $color-blush;
         font-weight: bold;
+    }
+
+    &__photo {
+        width: 30%;
     }
 }
 
