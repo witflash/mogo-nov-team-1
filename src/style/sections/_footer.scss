@@ -82,10 +82,11 @@
         margin-bottom: 30px;
         font-size: $font-small;
         
-        img {
-            float: left;
-            margin-right: 20px;
-        }
+    }
+    
+    &__img {
+        float: left;
+        margin-right: 20px;
     }
 
     &__more {
