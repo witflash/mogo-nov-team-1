@@ -6,29 +6,75 @@
         margin: 0;
     }
 
-    a {
+    &__link {
         text-decoration: none;
         color: inherit;
     }
-
-    &__bottom {
-        margin-top: 40px;
-        padding-top: 25px;
-        font-family: $font-montserrat;
+    
+    &__item {
+        margin-top: 60px;    
+    }
+    
+    &__date {
+        font-style: italic;
+    }
+    
+    &__galery {
         text-align: center;
-        font-size: $font-main;
+    }
+
+    &__title {
+        padding-bottom: 40px;
+        font-family: $font-montserrat;
+        font-size: $font-xlarge;
+        color: $gray--light;
+        
+        &--small {
+            font-size: $font-main;
+            color: $gray--darken;
+            text-transform: uppercase;
+        }
+        
+        &--smaller {
+            padding-top: 20px;
+            padding-bottom: 12px;
+            font-size: $font-small;
+            color: $gray--darken;
+            text-transform: uppercase;
+        }
+    }
+    
+    &__desc {
+        padding-bottom: 50px;
+        line-height: 1.6;
+        
+        &__strong {
+            font-size: 1.2em;
+        }
+    }
+    
+    &__social {
+        margin-top: 15px;
         border-top: solid 1px $gray--lighten;
+        padding-top: 15px;
+        padding-bottom: 40px; 
+        font-style: italic;
+        user-select: none;
+        
+    }
+    
+    &__icon {
+        text-decoration: none;
+        color: $color-teal;
+        opacity: 0.7;
+        
+        &:hover {
+            opacity: 1;
+            font-size: 1.3em;
+            transition-duration: 0.3s;
+        }
     }
 
-    &__team-text {
-        color: $color-blush;
-    }
-}
-
-.footer-item {
-    margin-top: 60px;
-    
-    
     &__article {
         margin-bottom: 30px;
         font-size: $font-small;
@@ -39,74 +85,26 @@
         }
     }
 
-    &__date {
+    &__more {
+        padding-top: 20px;
+        font-size: $font-small;
         font-style: italic;
+        color: $gray--darken;
     }
-    
-    &__galery {
+
+    &__bottom {
+        margin-top: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-family: $font-montserrat;
         text-align: center;
-    }
-    
-    &__desc {
-        padding-top: 20px;
-        font-size: $font-small;
-        font-style: italic;
-        color: $gray--darken;
-    }
-}
-
-.footer-title {
-    padding-bottom: 40px;
-    font-family: $font-montserrat;
-    font-size: $font-xlarge;
-    color: $gray--light;
-
-    &--small {
         font-size: $font-main;
-        color: $gray--darken;
-        text-transform: uppercase;
+        border-top: solid 1px $gray--lighten;
     }
 
-    &--smaller {
-        padding-top: 20px;
-        padding-bottom: 12px;
-        font-size: $font-small;
-        color: $gray--darken;
-        text-transform: uppercase;
-    }
-}
-
-.footer-desc {
-    padding-bottom: 50px;
-    line-height: 1.6;
-
-    &__strong {
-        font-size: 1.2em;
-    }
-}
-
-.footer-social {
-    margin-top: 15px;
-    border-top: solid 1px $gray--lighten;
-    padding-top: 15px;
-    padding-bottom: 40px; 
-    font-style: italic;
-    user-select: none;
-    
-    a {
-        color: $color-teal;
-        opacity: 0.7;
-
-        &:hover {
-            opacity: 1;
-            font-size: 1.3em;
-            transition-duration: 0.3s;
-        }
-    }
-
-    &__height {
-        visibility: hidden;
-        font-size: 1.3em;
+    &__team {
+        color: $color-blush;
+        font-weight: bold;
     }
 }
 

@@ -3974,80 +3974,76 @@ html {
   background-color: #f8f8f8; }
   .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p {
     margin: 0; }
-  .footer a {
+  .footer__link {
     text-decoration: none;
     color: inherit; }
-  .footer__bottom {
-    margin-top: 40px;
-    padding-top: 25px;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    font-size: 14px;
-    border-top: solid 1px #e5e5e5; }
-  .footer__team-text {
-    color: #f38181; }
-
-.footer-item {
-  margin-top: 60px; }
-  .footer-item__article {
-    margin-bottom: 30px;
-    font-size: 12px; }
-    .footer-item__article img {
-      float: left;
-      margin-right: 20px; }
-  .footer-item__date {
+  .footer__item {
+    margin-top: 60px; }
+  .footer__date {
     font-style: italic; }
-  .footer-item__galery {
+  .footer__galery {
     text-align: center; }
-  .footer-item__desc {
-    padding-top: 20px;
-    font-size: 12px;
+  .footer__title {
+    padding-bottom: 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+    color: #cccccc; }
+    .footer__title--small {
+      font-size: 14px;
+      color: #333;
+      text-transform: uppercase; }
+    .footer__title--smaller {
+      padding-top: 20px;
+      padding-bottom: 12px;
+      font-size: 12px;
+      color: #333;
+      text-transform: uppercase; }
+  .footer__desc {
+    padding-bottom: 50px;
+    line-height: 1.6; }
+    .footer__desc__strong {
+      font-size: 1.2em; }
+  .footer__social {
+    margin-top: 15px;
+    border-top: solid 1px #e5e5e5;
+    padding-top: 15px;
+    padding-bottom: 40px;
     font-style: italic;
-    color: #333; }
-
-.footer-title {
-  padding-bottom: 40px;
-  font-family: Montserrat, sans-serif;
-  font-size: 50px;
-  color: #cccccc; }
-  .footer-title--small {
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase; }
-  .footer-title--smaller {
-    padding-top: 20px;
-    padding-bottom: 12px;
-    font-size: 12px;
-    color: #333;
-    text-transform: uppercase; }
-
-.footer-desc {
-  padding-bottom: 50px;
-  line-height: 1.6; }
-  .footer-desc__strong {
-    font-size: 1.2em; }
-
-.footer-social {
-  margin-top: 15px;
-  border-top: solid 1px #e5e5e5;
-  padding-top: 15px;
-  padding-bottom: 40px;
-  font-style: italic;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-  .footer-social a {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .footer__icon {
+    text-decoration: none;
     color: #95e1d3;
     opacity: 0.7; }
-    .footer-social a:hover {
+    .footer__icon:hover {
       opacity: 1;
       font-size: 1.3em;
       -webkit-transition-duration: 0.3s;
               transition-duration: 0.3s; }
-  .footer-social__height {
-    visibility: hidden;
-    font-size: 1.3em; }
+  .footer__article {
+    margin-bottom: 30px;
+    font-size: 12px; }
+    .footer__article img {
+      float: left;
+      margin-right: 20px; }
+  .footer__more {
+    padding-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: #333; }
+  .footer__bottom {
+    margin-top: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    border-top: solid 1px #e5e5e5; }
+  .footer__team {
+    color: #f38181;
+    font-weight: bold; }
 
 .clear {
   clear: both; }
