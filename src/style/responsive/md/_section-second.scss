@@ -1,5 +1,9 @@
 .stat {
 
+	&__item {
+		padding: 60px 5px;
+	}
+
 	&__count {
 		font-size: $font-xlarge * 0.75;
 	}

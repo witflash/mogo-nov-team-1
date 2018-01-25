@@ -1,6 +1,6 @@
 .stat {
-	flex-wrap: wrap;
-	padding: 90px 0;
+	flex-flow: column;
+	padding: 0;
 
 	&__item {
 		padding: 20px;
@@ -12,6 +12,6 @@
 	}
 
 	&__count {
-		font-size: $font-xlarge * 0.5;
+		font-size: $font-xlarge * 0.75;
 	}
 }
