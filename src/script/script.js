@@ -14,7 +14,7 @@ $(document).ready(function(){
         let headerSliderCurrent = 0; // for index of current slide 
         let headerSliderSlides = $(".section--header .slides__item").toArray(); // make array from jq elements list
 
-        $(".header__slider").slick({ // slider initialization
+        $(".js-header-slider").slick({ // slider initialization
             infinite: true,
             speed: 1000,
             fade: true,
@@ -22,18 +22,8 @@ $(document).ready(function(){
             dots: false,
             prevArrow: false,
             nextArrow: false,
-            zIndex: 0
-        });
-
-        $(".text-slider").slick({ // slider initialization
-            infinite: true,
-            speed: 1000,
-            fade: true,
-            cssEase: 'linear',
-            dots: false,
-            prevArrow: false,
-            nextArrow: false,
-            zIndex: 0
+            zIndex: 0,
+            draggable: false
         });
 
         headerSliderSwitch(0); // for launch slide switching process
@@ -50,13 +40,11 @@ $(document).ready(function(){
 
             // go to wanted slide or to next one
             if(slide != null){
-                $(".header__slider").slick("slickGoTo", slide);
-                $(".text-slider").slick("slickGoTo", slide);
+                $(".js-header-slider").slick("slickGoTo", slide);
                 headerSliderCurrent = slide;
             } else{
-                $(".header__slider").slick("slickNext");
-                $(".text-slider").slick("slickNext");
-                headerSliderCurrent = $(".header__slider").slick("slickCurrentSlide");
+                $(".js-header-slider").slick("slickNext");
+                headerSliderCurrent = $(".js-header-slider").slick("slickCurrentSlide");
             }
 
             // animate process line for current slide
