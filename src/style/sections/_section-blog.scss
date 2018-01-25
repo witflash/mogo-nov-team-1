@@ -6,6 +6,7 @@
 .blog {
 
     &__item {
+        position: relative;
         margin-top: 45px;
         color: $gray;
 
@@ -30,7 +31,19 @@
             background-image: url("../img/blog_03.png");
         }
 
+        &:hover {
+
+            .blog__gradient {
+                opacity: 1;
+            }
+
+            .date {
+                    bottom: 0;
+                    left: 0;
+            }
+        }
     }
+    
 
     &__title {
         font-family: $font-montserrat;
@@ -52,6 +65,25 @@
         font-style: italic;
 
     }
+
+    &__gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: $color-bg;
+        background: linear-gradient(180deg,hsla(0,83%,73%,.9) 0,hsla(47,95%,76%,.9));
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    &__readmore {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-family: $font-montserrat;
+        text-transform: uppercase;
+    }
 }
 
 .date {
@@ -63,6 +95,7 @@
     background-color: $color-teal;
     text-align: center;
     color: $color-bg;
+    transition: 0.5s;    
 
     &__wrap {
         position: relative;

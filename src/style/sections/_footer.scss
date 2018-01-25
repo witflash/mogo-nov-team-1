@@ -6,107 +6,139 @@
         margin: 0;
     }
 
-    a {
+    &__item {
+        display: block;
+        margin-top: 60px;    
+    }
+    
+    &__date {
+        font-style: italic;
+    }
+    
+    &__gallery {
+        text-align: center;
+    }
+    
+    &__title {
+        padding-bottom: 40px;
+        font-family: $font-montserrat;
+        font-size: $font-xlarge;
+        color: $gray--light;
+        
+        &--small {
+            font-size: $font-main;
+            color: $gray--darken;
+            text-transform: uppercase;
+        }
+        
+        &--smaller {
+            padding-bottom: 12px;
+            font-size: $font-small;
+            color: $gray--darken;
+            text-transform: uppercase;
+        }
+    }
+    
+    &__desc {
+        padding-bottom: 50px;
+        line-height: 1.6;
+        
+        &__strong {
+            font-size: 1.2em;
+        }
+    }
+
+    &__subscribe {
+        display: flex;
+    }
+
+    &__input {
+        flex: 1 0 auto;
+    }
+    
+    &__social {
+        margin-top: 15px;
+        border-top: solid 1px $gray--lighten;
+        padding-top: 15px;
+        padding-bottom: 40px; 
+        font-style: italic;
+        user-select: none;
+        
+    }
+    
+    &__icon {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-teal;
+        opacity: 0.7;
+        transition-duration: 0.3s;
+        
+        &:hover {
+            opacity: 1;
+            transform: scale(1.3);
+            transition-duration: 0.3s;
+        }
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: inherit;
+        transition: 0.3s;
+        margin-bottom: 30px;
+        
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__img {
+        margin-right: 20px;
+    }
+
+    &__article {
+        font-size: $font-small;
+        
+    }
+
+    &__more {
+        display: block;
+        padding-top: 20px;
+        font-size: $font-small;
+        font-style: italic;
+        color: $gray--darken;
+        text-decoration: none;
+
+        &:hover {
+            color: teal;
+        }
     }
 
     &__bottom {
         margin-top: 40px;
         padding-top: 25px;
+        padding-bottom: 25px;
         font-family: $font-montserrat;
         text-align: center;
         font-size: $font-main;
         border-top: solid 1px $gray--lighten;
     }
 
-    &__team-text {
+    &__team {
         color: $color-blush;
-    }
-}
-
-.footer-item {
-    margin-top: 60px;
-    
-    
-    &__article {
-        margin-bottom: 30px;
-        font-size: $font-small;
-        
-        img {
-            float: left;
-            margin-right: 20px;
-        }
+        font-weight: bold;
     }
 
-    &__date {
-        font-style: italic;
-    }
-    
-    &__galery {
-        text-align: center;
-    }
-    
-    &__desc {
-        padding-top: 20px;
-        font-size: $font-small;
-        font-style: italic;
-        color: $gray--darken;
-    }
-}
-
-.footer-title {
-    padding-bottom: 40px;
-    font-family: $font-montserrat;
-    font-size: $font-xlarge;
-    color: $gray--light;
-
-    &--small {
-        font-size: $font-main;
-        color: $gray--darken;
-        text-transform: uppercase;
-    }
-
-    &--smaller {
-        padding-top: 20px;
-        padding-bottom: 12px;
-        font-size: $font-small;
-        color: $gray--darken;
-        text-transform: uppercase;
-    }
-}
-
-.footer-desc {
-    padding-bottom: 50px;
-    line-height: 1.6;
-
-    &__strong {
-        font-size: 1.2em;
-    }
-}
-
-.footer-social {
-    margin-top: 15px;
-    border-top: solid 1px $gray--lighten;
-    padding-top: 15px;
-    padding-bottom: 40px; 
-    font-style: italic;
-    user-select: none;
-    
-    a {
-        color: $color-teal;
-        opacity: 0.7;
+    &__photo {
+        width: 30%;
+        transition: 0.3s;
 
         &:hover {
-            opacity: 1;
-            font-size: 1.3em;
-            transition-duration: 0.3s;
+            transform: scale(0.9);
+            opacity: 0.7;
         }
-    }
-
-    &__height {
-        visibility: hidden;
-        font-size: 1.3em;
     }
 }
 
@@ -116,7 +148,6 @@
 
 .input {
     padding: 11px;
-    width: 230px;
     border: 1px solid $gray--lighten;
     @include placeholder {
         font-style: italic;
@@ -134,9 +165,10 @@
     text-transform: uppercase;
     color: $color-bg;
     opacity: 0.7;
+    transition-duration: 0.3s;
 
     &:hover {
         opacity: 1;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
     }
 }

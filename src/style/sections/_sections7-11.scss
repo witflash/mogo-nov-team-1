@@ -98,7 +98,8 @@
     margin: 0 auto;
     width: 135px;
     height: 145px;
-    background: url(../img/logos.png) no-repeat;
+	background: url(../img/logos.png) no-repeat;
+	transition: 0.3s;
 
 	&--2 {
     background-position: -215px 0;
