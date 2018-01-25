@@ -42,7 +42,7 @@
                 <div class="header__text--secondary text-slider__item">Our Contacts</div>
             </div>
             <h1 class="header__text--primary">Welcome<br>to mogo</h1>
-            <button class="header__button">Learn more</button>
+            <a href="#learn-more" class="header__button js-anchor">Learn more</a>
         </div>
         <div class="slides__wrap">
             <div class="slides__item">
@@ -80,7 +80,7 @@
         </div>
     </div>
 </header>
-        <section class="section section--first">
+        <section class="section section--first" id="learn-more">
     <div class="container">
     	<h4 class="section__title">What we do</h4>
     	<h3 class="section__subtitle">Story about us</h3>
@@ -661,15 +661,19 @@
     </div>
 </section>
         <section class="section section--openmap">
-    <div class="openmap js-click-map">
+    <div class="openmap">
         <div class="openmap__map js-map">
             <div id="map"></div>
+            <div class="icon-arrow-up openmap__close js-close-map"></div>
         </div>
-        <div class="openmap__text js-openmap-text">
-            <span class="icon-point openmap__point"></span>
-            <p class="openmap__title">open map</p>
-            <span class="section__line"></span>
+        <div class="openmap__cover js-click-map">
+            <div class="openmap__text js-openmap-text">
+                <span class="icon-point openmap__point"></span>
+                <p class="openmap__title">open map</p>
+                <span class="section__line"></span>
+            </div>
         </div>
+
     </div>
 </section>
 

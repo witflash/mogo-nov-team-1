@@ -180,10 +180,10 @@
     }
 
     .header__button{
+        display: inline-block;
         text-transform: uppercase;
         border: 3px solid #fff;
-        height: 40px;
-        padding: 0 32px;
+        padding: 8px 32px;
         box-sizing: border-box;
         background-color: transparent;
         transition: 0.3s;
@@ -192,6 +192,7 @@
         animation-duration: 2s;
         animation-iteration-count: infinite;
         outline: none;
+        overflow: hidden;
 
         &:hover{
             color: #f38181;
