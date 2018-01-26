@@ -135,8 +135,28 @@ $(document).ready(function(){
       $('.js-openmap-text').fadeOut(500)
     });
     // END SECTION OPENMAP //
+    
+    // START ODOMETER COUNT //
+    $.each($('.stat__count'), function(index, value) { // reset to zero
+        $(value).text('0')
+    });
+
+    $('.section--second').on('mouseover', function () {
+        var dataStat = {
+            odo1: 42,
+            odo2: 123,
+            odo3: 15,
+            odo4: 99,
+            odo5: 24
+        };
+        $.each(dataStat, function(key, value) {
+            $('#'+key).text(value);
+        })
+    });
+    // END ODOMETER COUNT //
 
 });
+
 
 function loadMap() {
   var position = new google.maps.LatLng(50.4380912,30.5068577);
