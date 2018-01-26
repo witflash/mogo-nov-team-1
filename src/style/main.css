@@ -3112,7 +3112,8 @@ html {
       width: 100%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      outline: none; }
   .section--header .header__slider {
     position: absolute;
     height: 100%;
