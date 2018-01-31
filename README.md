@@ -1,6 +1,6 @@
 FE-November Team: Mogo Template
 ===============
-Build: [https://mateacademy-fe-july.github.io/mogo-nov-team-1/src/](https://mateacademy-fe-july.github.io/mogo-nov-team-1/src/)
+Build: [https://witflash.github.io/mogo-nov-team-1/](OPEN THE BUILD)
 
 
 Install
