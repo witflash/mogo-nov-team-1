@@ -5,7 +5,8 @@ let gulp            = require('gulp'),
 	nunjucks        = require('gulp-nunjucks'),
 	concat          = require('gulp-concat'),
 	iconfont        = require('gulp-iconfont'),
-	iconfontCss     = require('gulp-iconfont-css');
+	iconfontCss     = require('gulp-iconfont-css'),
+	del 			= require('del');
 
 
 gulp.task('scss', function() {
@@ -56,4 +57,25 @@ gulp.task('default', ['browser-sync', 'nunjucks', 'scss'], function() {
 	gulp.watch('src/template/**/*.html', ['nunjucks', browserSync.reload]);
 	gulp.watch('src/style/**/*.css', browserSync.reload);
 	gulp.watch('src/script/**/*.js', browserSync.reload);
+});
+
+gulp.task('clean', function(){
+	return del.sync('docs');
+});
+
+gulp.task('build', ['clean', 'nunjucks', 'scss'], function() {
+	var buildHtml = gulp.src('src/[^_]*.html')
+	.pipe(gulp.dest('docs'));
+	
+	var buildCss = gulp.src('src/style/**/*.css')
+	.pipe(gulp.dest('docs/style'));
+	
+	var buildJs = gulp.src('src/script/**/*.js')
+	.pipe(gulp.dest('docs/script'));
+
+	var buildFonts = gulp.src('src/font/**/*.*')
+	.pipe(gulp.dest('docs/font'));
+
+	var buildImg = gulp.src('src/img/**/*.*')
+	.pipe(gulp.dest('docs/img'));
 });

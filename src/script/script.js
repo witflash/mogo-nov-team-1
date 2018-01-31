@@ -148,17 +148,25 @@ $(document).ready(function(){
         $(value).text('0')
     });
 
-    $('.section--second').on('mouseover', function () {
-        var dataStat = {
-            odo1: 42,
-            odo2: 123,
-            odo3: 15,
-            odo4: 99,
-            odo5: 24
+    $(window).scroll( function () {
+        let $odometer = $('.section--second'),
+            odometerTop = $odometer.offset().top,
+            windowTop = $(window).scrollTop();
+
+        if (odometerTop - windowTop <= 400) {
+            console.log('Match!');
+            var dataStat = {
+                odo1: 42,
+                odo2: 123,
+                odo3: 15,
+                odo4: 99,
+                odo5: 24
+            };
+        
+            $.each(dataStat, function(key, value) {
+                $('#'+key).text(value);
+            })
         };
-        $.each(dataStat, function(key, value) {
-            $('#'+key).text(value);
-        })
     });
     // END ODOMETER COUNT //
 
