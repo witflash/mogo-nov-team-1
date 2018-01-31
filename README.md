@@ -1,6 +1,6 @@
 FE-November Team: Mogo Template
 ===============
-Build: [https://witflash.github.io/mogo-nov-team-1/](OPEN THE BUILD)
+Build: [OPEN THE BUILD](https://witflash.github.io/mogo-nov-team-1/)
 
 
 Install
