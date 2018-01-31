@@ -154,7 +154,6 @@ $(document).ready(function(){
             windowTop = $(window).scrollTop();
 
         if (odometerTop - windowTop <= 400) {
-            console.log('Match!');
             var dataStat = {
                 odo1: 42,
                 odo2: 123,
