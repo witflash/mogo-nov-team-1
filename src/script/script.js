@@ -57,6 +57,16 @@ $(document).ready(function(){
         });
     // -- slider
 
+    // slow scroll to Learn More
+    $(".js-anchor").click(function () {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated)").animate({
+            scrollTop: destination
+        }, 800);
+        return false;
+    });
+
     // END HEADER //
 
 
@@ -118,9 +128,18 @@ $(document).ready(function(){
     // END SECTION 6 and 10 //
 
     // SECTION OPENMAP //
-    $('.js-click-map').one('click', function () {
-      $('.js-map').addClass('opened');
-      $('.js-openmap-text').fadeOut(500)
+    $('.js-click-map').on('click', function () {
+        $('.js-map').addClass('opened');
+        $('.js-openmap-text').fadeOut(500);
+        $('.js-click-map').hide();
+        $('.js-close-map').show();
+    });
+
+    $('.js-close-map').on('click', function() {
+        $('.js-map').removeClass('opened');
+        $('.js-openmap-text').fadeIn(500);
+        $('.js-close-map').hide();     
+        $('.js-click-map').show();                   
     });
     // END SECTION OPENMAP //
     

@@ -36,9 +36,8 @@
     @import "sm/_sections-3-6";
     @import "sm/_sections-7-11";
 
-    .section:not(.section--header){
+    .section:not(.section--header) {
         padding-top: 30px;
-        padding-bottom: 10px;
     }
 
     .section{

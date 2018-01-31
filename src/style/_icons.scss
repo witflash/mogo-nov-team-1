@@ -38,77 +38,80 @@
 	@if $filename == arrow-right {
 		$char: "\E004";
 	}
-	@if $filename == book {
+	@if $filename == arrow-up {
 		$char: "\E005";
 	}
-	@if $filename == bullseye {
+	@if $filename == book {
 		$char: "\E006";
 	}
-	@if $filename == cart {
+	@if $filename == bullseye {
 		$char: "\E007";
 	}
-	@if $filename == comment {
+	@if $filename == cart {
 		$char: "\E008";
 	}
-	@if $filename == computer {
+	@if $filename == comment {
 		$char: "\E009";
 	}
-	@if $filename == dribbble {
+	@if $filename == computer {
 		$char: "\E00A";
 	}
-	@if $filename == equalizer {
+	@if $filename == dribbble {
 		$char: "\E00B";
 	}
-	@if $filename == eye {
+	@if $filename == equalizer {
 		$char: "\E00C";
 	}
-	@if $filename == facebook {
+	@if $filename == eye {
 		$char: "\E00D";
 	}
-	@if $filename == g-plus {
+	@if $filename == facebook {
 		$char: "\E00E";
 	}
-	@if $filename == graph {
+	@if $filename == g-plus {
 		$char: "\E00F";
 	}
-	@if $filename == home {
+	@if $filename == graph {
 		$char: "\E010";
 	}
-	@if $filename == image {
+	@if $filename == home {
 		$char: "\E011";
 	}
-	@if $filename == instagram {
+	@if $filename == image {
 		$char: "\E012";
 	}
-	@if $filename == picture {
+	@if $filename == instagram {
 		$char: "\E013";
 	}
-	@if $filename == pin {
+	@if $filename == picture {
 		$char: "\E014";
 	}
-	@if $filename == pinterest {
+	@if $filename == pin {
 		$char: "\E015";
 	}
-	@if $filename == point {
+	@if $filename == pinterest {
 		$char: "\E016";
 	}
-	@if $filename == search {
+	@if $filename == point {
 		$char: "\E017";
 	}
-	@if $filename == speech {
+	@if $filename == search {
 		$char: "\E018";
 	}
-	@if $filename == tumblr {
+	@if $filename == speech {
 		$char: "\E019";
 	}
-	@if $filename == twitter {
+	@if $filename == tumblr {
 		$char: "\E01A";
 	}
-	@if $filename == users {
+	@if $filename == twitter {
 		$char: "\E01B";
 	}
-	@if $filename == youtube {
+	@if $filename == users {
 		$char: "\E01C";
+	}
+	@if $filename == youtube {
+		$char: "\E01D";
 	}
 
 	@return $char;
@@ -136,6 +139,9 @@
 }
 .icon-arrow-right {
 	@include icon(arrow-right);
+}
+.icon-arrow-up {
+	@include icon(arrow-up);
 }
 .icon-book {
 	@include icon(book);
