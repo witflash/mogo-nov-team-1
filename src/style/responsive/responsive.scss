@@ -60,14 +60,17 @@
 @media (max-width: 575px) {
     @import "xs/_section-header";
     @import "xs/_section-first";
-    @import "xs/_section-second";    
+    @import "xs/_section-second";
+    @import "xs/_section-design";        
     @import "xs/_sections-3-6";
     @import "xs/_sections-7-11";
+    @import "xs/_section-footer";
 
     .section:not(.section--header){
         padding-top: 30px;
-        padding-bottom: 10px;
+        // padding-bottom: 10px;
     }
+
 
     .section{
         &__descr{
